@@ -1,0 +1,246 @@
+DAY_1_2082_01_13
+
+age=27
+print(age)
+
+is_hot= True
+print(is_hot)
+print(type(age))#
+
+# age =27
+# print("Ram is "+ str(age) + " years old.") string comes with string so int is 
+
+a=105
+b="EV Car"
+c="6.6"
+Im_Good=True
+
+print(a,b,c,Im_Good)
+
+
+a=105
+b="EV Car"
+c="6.6"
+Im_Good=True
+
+print(a,b,c,Im_Good,sep='\n') #line by line
+
+
+#condition aka control statement
+
+#number=int(input("Enter a number")) #this line takes inputs from user.
+number = 0
+if(number>0):
+  print("Positive Integer")
+elif(number<0):
+  print("Negative Integer")
+else:
+  print("Zero")
+
+
+
+#loops 
+
+for  i in range(1,11):
+  print(i)  # integer 1 to 10
+
+
+for  i in range(1,11):
+  print(i*i) # square 1 to 100
+
+
+
+Assignment: WAP to check whether odd or even.
+
+num = 4
+if num%2==0:  # or >it works, if (num%2==0):
+  print("Even")
+else:
+  print("Odd")
+
+
+DAY_2_2082_01_14
+
+List in Python
+Fruit=["apple","banana", "mango"]
+
+access item fruits(0) will call apple.
+
+change value. i.e. fruit[1] = "orange" changes to banana to orange.
+
+index : 0 1 2 3 or -1, -2, -3, -4 counts from end.
+
+add item. i.e. fruits.append("grape") adds grape to the end of list
+
+insert at index i.e. fruits.insert
+
+remove item fruits.insert 
+
+Length	len(fruits)
+
+
+Tuple is like list but cant CHANGE. USES small bracket().
+  
+  info.count() # dot is used for function.
+
+List vs tuple - 4 differnces
+
+mutable 	can change can't change
+syntax		[]		()
+speed 		slower 		faster 	, no change is faster
+use case 	dynamic 	fixed data
+
+list and tuple have repeated items.
+
+Set
+
+is in {} bracket EITHER fruits={"apple","banana", "mango"} OR fruits=set("apple","banana", "mango")
+set has no duplicate values. no repeated items
+
+
+
+common set methods
+
+add item
+remove item		removes particular item from a set, error if no item found 
+discard item		ignores one item, prints others, no matter if no item found
+clear set		CLS
+Len 			lenght 
+
+#assignment Find difference between
+
+
+sets : set operations 
+union			a|b
+intersection		
+difference
+
+
+subset check
+
+is_subset = A <= B     # or A.issubset(B)
+print("A is subset of B:", is_subset)
+
+
+
+
+#Dictioneries in python
+
+collection of key valye pair i.e. person = {"name":"ram", "age":22, "city": "Ktm"}
+
+variable: person
+Key: name, age, city, country etc.
+value: ram, 22, Ktm
+
+
+
+STRING MANIPULATION
+
+STING IS A SEUENCE OF CHARACTER IN  defined using ' ', " ", '"  '"
+ string can not be changed.
+
+
+
+Day 3 Modules [Modular Programming]
+
+1.Built in modules i.e. math, os, random, works with import 
+
+2.External modules i.e. needs to be instal using 
+
+NUMPY is used for matrix multiplication
+
+PANDA is used for data files
+
+3. User defined modules
+
+Statistics : Descriptive (generalize data ) and   inferential (specific result)
+
+Import a module and use different function calling them specifically.
+
+module call could be [basic: whole set of function] or [specific items : required functions from that module]
+
+i.e. 
+
+you can import module with short name i.e. pandas as pd, tensorflow as tfl, math with m. etc.
+
+
+
+Data manipulatin main : pandas and numpy. pandas.  is pre-processing of data. prepatation for real processing. 
+data visualizaion : matplotlib and seaborn . visualization
+
+
+
+
+DAY 4
+File handling and exception
+
+r, w , a, rb, wb ... r+, w+
+
+r is read
+
+with closes automatically after the file is open.
+
+read , read line , read lines >> file.read(), file.readline(), file.readlines()
+
+Write gives or create New dox. 
+
+Write commands overwrites given text to the existing file.
+
+Review: go to www.W3school.com
+
+
+
+Day 5 NumPy
+
+
+Day 6 Pandas
+
+df.head() gives few firt rows of a dataframe. df .head(10) gives upto 10
+
+df.info() gives metdata about columns, types, nulls in dataframe
+
+datatype is either str, int, float
+
+but in case of Anamnagar - 9 is object>>> mix of all data types. Now we seggregate data [place: anamnagar, ward:9[ is now cleaned data]]
+
+
+df.df['score']>85 gives output about score above 85 in df format.
+
+
+df.groupby('column') - data of a column in reference to another column.
+
+df.fillna(3) will fill 3 in null value cell.
+
+df.rename() - renames column name.
+head upper 5 , tail lower 5 for preview.
+
+Documentation: Search online about Python Lib in PyOrg and others
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

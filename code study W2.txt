@@ -1,0 +1,167 @@
+model selection: select suitble analysing tools
+
+feature scaling: feature in dataset are columns. feature scaling is convert those data in a certain range. i.e. 0-1. also called normalisation.
+
+error analysis: different between predicted and actual value.
+
+Descriptive vs Inferential Stat
+
+central tendency and variance. 
+
+variace: how different is data . split . how far from average value. 
+i.e. 1, 5, 6, 9, 15 less varried
+i.e. 10, 15, 85, 175, 850 more varried.
+
+Box plot gives 5 infor: Q1, Median, Q3, Min, Max 
+others are OUTLIERS
+
+
+DAY 5
+
+encoding categorical variable
+
+male = 1, female = 0
+
+eg pd.cut (df['age'], bins=[0,18,35,60,100]
+labels= ['teen', 'young adult', 
+'adult', 'senior']
+
+
+
+DAY 2 Week 2
+
+Neural Networks
+
+PCA: Principal component Analysis : removes unwanted data
+
+SVD: Singular value decomposition: divide  input into parts so that machine recognise a whole data in parts
+
+
+Day 3 Week 2
+
+Naive Bayes: Probability based on features
+
+Hidden Markhov Model: based on observation
+
+Bayesian Networks: event log based prediction
+
+
+Theoritical probability: already proved
+
+Experimental : predict by experiment
+
+conditional : based on some event
+
+
+DAY4 Week 2
+
+EDA : clean, explore, visualize, error findout
+
+anamolies: suspcious behaviour ie. outliers
+
+structure: 3,2 or 5,3 or 6,4 column rows
+
+pattern: 10- 20 lacs , 20-50k
+
+ML Model(already built) vs Modelling(creat your one model for your data)
+
+
+df.describe gives statistic summary of data central tendency....
+
+.sum() gives counts how many
+
+i.e. df.isnull().sum() or df.duplicated().sum()
+
+data type int, float, str; mix of all is object
+
+incosistent : malE, MALE, Male, use .lower >> all converts to lowercase.
+
+drop impute missing value>> fill the average value 
+
+normalize categories: is feature scaling.
+
+
+OVERFITTING of ML algorithms
+
+data trained : a - j, then y is test data
+
+Training accuracy may be 90%
+test accuracy ma be 20%, happens in case of hige variance>> i.e. data scatters. machine can't anlyse so memorise.
+
+
+IQR : interquartile range
+
+
+
+DAY 6
+
+embarked: where the passenger is from
+
+Summarize data to send for model
+
+Data cleaning: before inputing data into models 
+
+-remove or impute missing data
+-dropping or renaming irrelavant columns>> if some columns are not required drop it. 
+
+categorical ordinal  
+
+.astype>> int to str etc...
+
+skewness: distribution data>>right left positive negative
+
+right skewness: distribution is positive. left skewness is negative. no x or y axis.
+
+Feature vs target analysis: correlation 
+
+boxplot : univariate
+pairplot: bivariate
+heatmap: multivariate
+
+grouped bar plots: i.e. for profit of banks per quarter.
+
+IQR = Q3 - Q1(formula)
+Q3, Q1 find out
+Lower limit : Q1-1.5IQR
+Upper limit : Q3+1.5IQR
+
+lower limit and upper limit slightly stretch out to include near outliers(bring them within limit)
+
+
+Z-score
+[to find out outlier ] 
+data:[2,4,6,8,10,12,100]
+
+?? mean =21.67
+?? Std  = 35.12
+
+Z-score = (100-mean)/Std
+if value is <-2 or >2 possible outliers
+if value is <-3 or >3 confirm ouliters
+
+if outlier is far drop. use dropna
+
+
+scatter plot: shows distribution, density and relationship.
+
+Handling outliers
+
+cap them. replace outliers to nearest value of common data i.e. 100 to 7, 8 , 9
+
+log transformation: use log table 
+
+
+Feature Engineering:
+
+BINNING
+ONE-HOT ENCODING:  category to Number
+Date-time : year, month, day
+
+PIPELINE THINKING
+RAW DATA-> CLEAN - > ENRICH WIHT  NEW FEATURE -> READY FOR ML
+
+
+
+
+
+
